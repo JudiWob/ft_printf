@@ -6,7 +6,7 @@
 #    By: jpaselt <jpaselt@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/30 12:24:30 by jpaselt           #+#    #+#              #
-#    Updated: 2024/12/06 22:36:35 by jpaselt          ###   ########.fr        #
+#    Updated: 2024/12/09 14:41:39 by jpaselt          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CC			=	gcc
 FLAGS		=	-Wall -Wextra -Werror
 
 SOURCES		=	fi_putchar.c fi_putstr.c  fi_putnbr.c \
-				ft_printf.c puthex.c putptr.c putuint.c \
+				ft_printf.c fi_puthex.c fi_putptr.c fi_putuint.c \
 				
 OBJS		=	$(SOURCES:.c=.o)
 

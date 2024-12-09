@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   puthex.c                                           :+:      :+:    :+:   */
+/*   fi_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpaselt <jpaselt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:11:22 by jpaselt           #+#    #+#             */
-/*   Updated: 2024/12/08 12:43:25 by jpaselt          ###   ########.fr       */
+/*   Updated: 2024/12/09 14:53:34 by jpaselt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	puthex(unsigned long hex, char c)
+int	fi_puthex(unsigned long hex, char c)
 {
 	int				temp;
 	int				count;
 
 	count = 0;
 	if (hex / 16)
-		count += puthex(hex / 16, c);
+		count += fi_puthex(hex / 16, c);
 	temp = hex % 16;
 	if (temp > 9)
 	{
@@ -27,7 +27,7 @@ int	puthex(unsigned long hex, char c)
 			fi_putchar(temp + 55);
 		else
 			fi_putchar(temp + 87);
-	}	
+	}
 	else
 		fi_putchar(temp + 48);
 	count++;
