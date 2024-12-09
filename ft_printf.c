@@ -6,7 +6,7 @@
 /*   By: jpaselt <jpaselt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 10:34:07 by jpaselt           #+#    #+#             */
-/*   Updated: 2024/12/09 14:55:35 by jpaselt          ###   ########.fr       */
+/*   Updated: 2024/12/09 15:29:14 by jpaselt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	print_this(va_list args, char c )
 
 	count = 0;
 	if (c == 'c')
-		count += fi_putchar((unsigned char)va_arg(args, unsigned int));
+		count += fi_putchar(va_arg(args, int));
 	if (c == 's')
 		count += fi_putstr(va_arg(args, char *));
 	if (c == 'p')

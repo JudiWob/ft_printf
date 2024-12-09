@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	fi_putchar(unsigned char c)
+int	fi_putchar(int c)
 {
 	write(1, &c, 1);
 	return (1);
