@@ -6,7 +6,7 @@
 /*   By: jpaselt <jpaselt@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 11:02:17 by jpaselt           #+#    #+#             */
-/*   Updated: 2024/12/09 14:55:19 by jpaselt          ###   ########.fr       */
+/*   Updated: 2025/01/02 15:35:38 by jpaselt          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ int	fi_putstr(char *s)
 
 	i = 0;
 	if (s == NULL)
-		i = fi_putstr(s);
+	{
+		fi_putstr("(null)");
+		return (6);
+	}
 	while (s[i])
 	{
 		fi_putchar(s[i]);
