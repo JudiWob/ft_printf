@@ -36,5 +36,5 @@ Hello, Alice! Your score is 95%
 ```
 
 ✅ Allowed functions
-malloc, free, write,
-va_start, va_arg, va_copy, va_end
+
+malloc,  free,  write,  va_start,  va_arg,  va_copy,  va_end
