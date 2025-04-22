@@ -1,6 +1,8 @@
-# ft_printf ⭐ Validated with 100%
-  
-> 🎯 A custom implementation of the `printf` function in C, part of the 42 curriculum.
+# ft_printf 
+
+⭐ Validated with 100%
+
+🧠 A custom implementation of the `printf` function in C, part of the 42 curriculum.
 
 ## 📚 About
 
@@ -10,7 +12,7 @@ The challenge is to reproduce the behavior of the standard `printf` function, bu
 
 The goal is to handle various format specifiers and edge cases, implement the function efficiently, and adhere to the C programming language's low-level memory management principles.
 
-## 🧠 Objectives
+## 🎯 Objectives
 
 - Implement the `printf` function from scratch with support for format specifiers like `%c`, `%s`, `%d`, `%x`, etc.
 - Handle different argument types and convert them correctly (e.g., integers, strings, pointers).
