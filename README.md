@@ -1,6 +1,5 @@
 # ft_printf
-
-  ⭐ Validated with 100%
+⭐ Validated with 100%
   
 > 🎯 A custom implementation of the `printf` function in C, part of the 42 curriculum.
 
